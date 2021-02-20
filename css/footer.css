@@ -2,4 +2,8 @@ footer {
   background: #0e0e0e;
   color: white;
 }
+
+footer .logo-wrapper {
+  width: 5rem;
+}
 /*# sourceMappingURL=footer.css.map */

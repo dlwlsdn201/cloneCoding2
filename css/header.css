@@ -1,5 +1,9 @@
 header {
   width: 100%;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  background: none;
 }
 
 header nav {
@@ -13,7 +17,13 @@ header .header-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 2rem;
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 1441px) {
+  header .header-wrapper {
+    padding: 1rem 12rem;
+  }
 }
 
 header .header-wrapper > * {
@@ -27,11 +37,19 @@ header .header-wrapper > * {
 }
 
 header .header-wrapper .logo-block {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   -ms-flex-negative: default;
       flex-shrink: default;
+}
+
+header .header-wrapper .logo-block img {
+  width: auto;
+  height: auto;
 }
 
 header .header-wrapper .header__nav__menu-wrapper {

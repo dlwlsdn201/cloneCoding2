@@ -1,5 +1,9 @@
 header {
     width: 100%;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    background: none;
 
     nav {
         width: 40rem;
@@ -8,7 +12,11 @@ header {
     .header-wrapper{
         display: flex;
         justify-content: space-between;
-        padding: 0px 2rem;
+        padding: 1rem 2rem;
+
+        @media screen and (min-width: 1441px){
+            padding: 1rem 12rem;
+        }
 
         & > * {
             display: flex;
@@ -17,8 +25,14 @@ header {
         }
 
         .logo-block{
+            flex: 0.5;
             justify-content: flex-start;
             flex-shrink: default;
+
+            img{
+                width: auto;
+                height: auto;
+            }
         }
     
         .header__nav__menu-wrapper {
