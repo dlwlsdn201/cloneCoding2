@@ -1,0 +1,37 @@
+header {
+    width: 100%;
+
+    nav {
+        width: 40rem;
+    }
+
+    .header-wrapper{
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 2rem;
+
+        & > * {
+            display: flex;
+            align-items: center;
+            border : 0.5px solid red;
+        }
+
+        .logo-block{
+            justify-content: flex-start;
+            flex-shrink: default;
+        }
+    
+        .header__nav__menu-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+    
+        .form-nav-block {
+            flex: 0.5;
+            justify-content: flex-end;
+        }
+    }
+
+
+}
