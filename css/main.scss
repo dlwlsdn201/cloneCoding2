@@ -12,7 +12,7 @@
             opacity: 0.4;
         }
 
-        .wrapper1__contents-block{
+        .section1__contents-block{
             position: absolute;
             left: 11.5%;
 
@@ -26,7 +26,7 @@
                 bottom: 18%;
             }
 
-            .wrapper1__text {
+            .section1__text {
                 line-height: 5.3rem;
                 font-size: 4.85rem;
                 width: 50rem;
@@ -48,7 +48,7 @@
     
             }
     
-            .wrapper1__btn {
+            .section1__btn {
                 outline: none;
                 border: none;
                 border-radius: 25px;
@@ -59,5 +59,70 @@
                 background: #615cfd;
             }
         }
+    }
+}
+
+.section2{
+    .wrapper2{
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+
+        .section2__title-block {
+            display: inherit;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 6rem;
+
+            .subtitle {
+                font-weight: 500;
+            }
+
+            .maintitle{
+                font-size: 2.5rem;
+                width: 32rem;
+                text-align: center;
+                margin: 1.4rem auto;
+                letter-spacing: 0.05rem;
+            }
+        }
+
+        .section2__contents-block {
+            display: inherit;
+            justify-content: space-between;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 1rem 2.8rem;
+            
+            .contents-box {
+                border: 1px solid red;
+                display: inherit;
+                flex-flow: column wrap;
+                align-items: center;
+                justify-content: center;
+                width: 16rem;
+                padding: 3rem 1rem;
+                
+                .section2__contents__title{
+                    margin: 2rem 0;
+                    font-weight: 500;
+                }
+
+                .section2__contents__desc{
+                    text-align: center;
+                    width: 13rem;
+                }
+
+                .img-box{
+                    width: 3.5rem;
+                }
+            }
+        }
+
+
     }
 }

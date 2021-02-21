@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: #a0a0a0;
+  background: #ececec;
 }
 
 img {
@@ -23,5 +23,10 @@ section {
   border: 1px solid purple;
   width: 100%;
   height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=common.css.map */
