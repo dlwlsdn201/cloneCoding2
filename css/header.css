@@ -17,7 +17,7 @@ header .header-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2.2rem 2rem;
 }
 
 @media screen and (min-width: 1441px) {
@@ -37,9 +37,9 @@ header .header-wrapper > * {
 }
 
 header .header-wrapper .logo-block {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -63,10 +63,14 @@ header .header-wrapper .header__nav__menu-wrapper {
       justify-content: space-around;
 }
 
+header .header-wrapper .header__nav__menu-wrapper .menu {
+  font-size: 0.95rem;
+}
+
 header .header-wrapper .form-nav-block {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

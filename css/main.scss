@@ -1,11 +1,29 @@
-.section1{
-    .wrapper1 {
-        background: rgb(0, 0, 0);
-        color: white;
+// ---------일괄 적용 스타일----------
+.section__wrapper {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        width: 100%;
+}
+
+@mixin buttonStyle {
+        outline: none;
+        border: none;
+        border-radius: 25px;
+        width: auto;
+        padding: 0.95rem 2.1rem;
+        font-size: 1rem;
+        color: white;
+        background: #615cfd;
+}
+
+// ---------------------------------
+
+.section1{
+    .wrapper1 {
+        background: rgb(0, 0, 0);
+        color: white;
         position: relative;
 
         .section1-background{
@@ -49,26 +67,15 @@
             }
     
             .section1__btn {
-                outline: none;
-                border: none;
-                border-radius: 25px;
-                width: auto;
-                padding: 0.95rem 2.1rem;
-                font-size: 1rem;
-                color: white;
-                background: #615cfd;
+                @include buttonStyle;
             }
+
         }
     }
 }
 
 .section2{
     .wrapper2{
-
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
 
         .section2__title-block {
             display: inherit;
@@ -123,6 +130,38 @@
             }
         }
 
+
+    }
+}
+
+.section3{ 
+    .wrapper3 {
+        flex-flow: row nowrap;
+
+        .section3__left{
+            box-sizing: border-box;
+            background-color: blue;
+            flex: 1;
+            height: auto;
+            .section3__img {
+                height: 100%;
+                object-fit: cover;
+                
+            }
+        }
+
+        .section3__right {
+            flex: 1;
+            
+            .contents-block {
+                padding: 6.3rem 5.1rem;
+
+                .section3__btn {
+                    @include buttonStyle;
+                }
+            }
+        }
+        
 
     }
 }
