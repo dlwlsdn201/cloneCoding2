@@ -242,4 +242,109 @@
       -ms-grid-row-align: start;
       align-self: start;
 }
+
+.section4 {
+  padding: 9.875rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section4 .section4__contents-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.section4 .section4__contents-block .section4__contents__title {
+  font-size: 2.3rem;
+  margin: 2rem auto;
+}
+
+.section4 .section4__contents-block .section4__contents__desc {
+  width: 34rem;
+  text-align: center;
+  color: #727272;
+}
+
+.section4 .section4__images-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1rem;
+}
+
+.section4 .section4__images-block img {
+  width: 100%;
+}
+
+.section4 .section4__images-block .block-top, .section4 .section4__images-block .block-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.section4 .section4__images-block .block-top {
+  height: 28rem;
+  margin-bottom: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section4 .section4__images-block .block-top .block-left {
+  width: 40rem;
+  height: 100%;
+}
+
+.section4 .section4__images-block .block-top .block-right {
+  width: 24rem;
+  height: 100%;
+}
+
+.section4 .section4__images-block .block-bottom {
+  border: 1px solid red;
+  height: 24.5rem;
+}
+
+.section4 .section4__images-block .block-bottom .block-left {
+  width: 40rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+}
+
+.section4 .section4__images-block .block-bottom .block-left .img-box:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.section4 .section4__images-block .block-bottom .block-right {
+  width: 24rem;
+  height: 100%;
+}
 /*# sourceMappingURL=main.css.map */

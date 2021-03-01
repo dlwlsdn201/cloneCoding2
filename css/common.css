@@ -5,9 +5,16 @@ html, body {
   background: #ececec;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 ul {

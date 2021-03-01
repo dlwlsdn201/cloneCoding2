@@ -35,7 +35,6 @@
             position: absolute;
             left: 11.5%;
 
-
             @media screen and (min-width: 1441px){
                 left: 28%;
             }
@@ -79,7 +78,6 @@
     .wrapper2{
 
         padding: 9.875rem 2rem;
-
         .section2__title-block {
             display: inherit;
             flex-flow: column wrap;
@@ -197,6 +195,109 @@
             }
         }
         
+
+    }
+}
+
+
+.section4 {
+    padding: 9.875rem 2rem;
+    box-sizing: border-box;
+    .section4__contents-block {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        
+        .section4__contents__title {
+            font-size: 2.3rem;
+            margin: 2rem auto;
+        }
+
+        .section4__contents__desc {
+            width: 34rem;
+            text-align: center;
+            color: #727272;
+        }
+
+    }
+    .section4__images-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 1rem;
+
+        
+        img {
+            width: 100%;
+        }
+
+        .block-top, .block-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .block-top {
+            height: 28rem;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+
+            .block-left {
+                width: 40rem;
+                height: 100%;
+
+            }
+
+            .block-right {
+                width: 24rem;
+                height: 100%;
+            }
+        }
+
+        .block-bottom {
+            border: 1px solid red;
+            height: 24.5rem;
+            .block-left {
+                width: 40rem;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+                border: 1px solid black;
+                .img-box:nth-child(2) {
+                    margin-left: 1rem;
+                }
+
+            }
+
+            .block-right {
+                width: 24rem;
+                height: 100%;
+                
+            }
+        }
+
+        // .img-box {
+        //     max-width: 40rem;
+        //     object-fit: fill;
+        //     margin: 1rem;
+        // }
+
+        // .img1 {
+        //     width: 50rem;
+        //     max-height: 25rem;
+        //     justify-self: flex-start;
+        // }
+
+        // .img2, .img4, .img5 {
+        //     width: 16.9rem;
+        // }
+
+        // .img3 { 
+        //     width: 19.9rem;
+        // }
 
     }
 }
