@@ -85,11 +85,11 @@
             justify-content: center;
             width: 100%;
 
-            .subtitle {
+            .section2__contents__subtitle {
                 font-weight: 500;
             }
 
-            .maintitle{
+            .section2__contents__title{
                 font-size: 2.5rem;
                 width: 30rem;
                 text-align: center;
@@ -175,18 +175,9 @@
                 }
 
                 .section3__contents__desc {
-                    font-weight: 100;
-                    margin: 1rem 0;
-                    line-height: 1.8rem;
+                    color: #c9c8c8;
                 }
 
-                .section3__contents__comment {
-                    font-size: 1.1rem;
-                    font-weight: 100;
-                    letter-spacing: 0.04rem;
-                    width: 23rem;
-                    line-height: 1.8rem;
-                }
                 .section3__btn {
                     @include buttonStyle;
                     margin-top: 2.625rem;
@@ -199,7 +190,6 @@
     }
 }
 
-
 .section4 {
     padding: 9.875rem 2rem;
     box-sizing: border-box;
@@ -211,7 +201,7 @@
         margin-bottom: 1rem;
         
         .section4__contents__title {
-            font-size: 2.3rem;
+            // font-size: 2.3rem;
             margin: 2rem auto;
         }
 
@@ -235,7 +225,7 @@
 
         .block-top, .block-bottom {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             justify-content: space-between;
             width: 100%;
         }
@@ -247,6 +237,7 @@
 
             .block-left {
                 width: 40rem;
+                padding-right: 0.5rem;
                 height: 100%;
 
             }
@@ -258,16 +249,16 @@
         }
 
         .block-bottom {
-            border: 1px solid red;
+            // border: 1px solid red;
             height: 24.5rem;
             .block-left {
+                display: flex;
                 width: 40rem;
                 height: 100%;
-                display: flex;
+                padding-right: 0.5rem;
                 justify-content: space-between;
-                border: 1px solid black;
                 .img-box:nth-child(2) {
-                    margin-left: 1rem;
+                    margin-left: 0.5rem;
                 }
 
             }
@@ -278,26 +269,66 @@
                 
             }
         }
+    }
+}
 
-        // .img-box {
-        //     max-width: 40rem;
-        //     object-fit: fill;
-        //     margin: 1rem;
-        // }
+.section5 {
+    padding: 9.875rem 0;
+    .wrapper5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row nowrap;
 
-        // .img1 {
-        //     width: 50rem;
-        //     max-height: 25rem;
-        //     justify-self: flex-start;
-        // }
+        .block-left {
+            box-sizing: border-box;
+            flex: 0.5;
+            padding: 0 5rem;
 
-        // .img2, .img4, .img5 {
-        //     width: 16.9rem;
-        // }
+            .comment {
+                margin-top: 2.2rem;
+                margin-bottom: 2.3rem;
+                
+            }
 
-        // .img3 { 
-        //     width: 19.9rem;
-        // }
+            .desc {
+                color: #494848;
+            }
 
+            .button-block {
+                display: flex;
+                align-items: center;
+                font-family: Roboto, sans-serif;
+                margin-top: 3rem;
+                i {
+                    font-size: 3.5rem;
+                    color: #615cfd;
+                    border-radius: 30px;
+                    margin-right: 1.2rem;
+                }
+
+                .button-text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .block-right {
+            flex: 0.7;
+            .img-box {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                img{
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    width: auto;
+                    height: auto;
+                    max-width: 100%;
+                    max-height: 80%;
+                    object-fit: contain;
+                }
+            }
+        }
     }
 }

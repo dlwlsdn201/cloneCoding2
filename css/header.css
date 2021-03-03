@@ -71,6 +71,7 @@ header .header-wrapper .form-nav-block {
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
+  font-size: 1.15em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

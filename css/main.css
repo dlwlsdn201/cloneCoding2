@@ -99,11 +99,11 @@
   width: 100%;
 }
 
-.section2 .wrapper2 .section2__title-block .subtitle {
+.section2 .wrapper2 .section2__title-block .section2__contents__subtitle {
   font-weight: 500;
 }
 
-.section2 .wrapper2 .section2__title-block .maintitle {
+.section2 .wrapper2 .section2__title-block .section2__contents__title {
   font-size: 2.5rem;
   width: 30rem;
   text-align: center;
@@ -215,17 +215,7 @@
 }
 
 .section3 .wrapper3 .section3__right .contents-block .section3__contents__desc {
-  font-weight: 100;
-  margin: 1rem 0;
-  line-height: 1.8rem;
-}
-
-.section3 .wrapper3 .section3__right .contents-block .section3__contents__comment {
-  font-size: 1.1rem;
-  font-weight: 100;
-  letter-spacing: 0.04rem;
-  width: 23rem;
-  line-height: 1.8rem;
+  color: #c9c8c8;
 }
 
 .section3 .wrapper3 .section3__right .contents-block .section3__btn {
@@ -267,7 +257,6 @@
 }
 
 .section4 .section4__contents-block .section4__contents__title {
-  font-size: 2.3rem;
   margin: 2rem auto;
 }
 
@@ -297,8 +286,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -314,6 +303,7 @@
 
 .section4 .section4__images-block .block-top .block-left {
   width: 40rem;
+  padding-right: 0.5rem;
   height: 100%;
 }
 
@@ -323,28 +313,117 @@
 }
 
 .section4 .section4__images-block .block-bottom {
-  border: 1px solid red;
   height: 24.5rem;
 }
 
 .section4 .section4__images-block .block-bottom .block-left {
-  width: 40rem;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 40rem;
+  height: 100%;
+  padding-right: 0.5rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid black;
 }
 
 .section4 .section4__images-block .block-bottom .block-left .img-box:nth-child(2) {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .section4 .section4__images-block .block-bottom .block-right {
   width: 24rem;
   height: 100%;
+}
+
+.section5 {
+  padding: 9.875rem 0;
+}
+
+.section5 .wrapper5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+.section5 .wrapper5 .block-left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  padding: 0 5rem;
+}
+
+.section5 .wrapper5 .block-left .comment {
+  margin-top: 2.2rem;
+  margin-bottom: 2.3rem;
+}
+
+.section5 .wrapper5 .block-left .desc {
+  color: #494848;
+}
+
+.section5 .wrapper5 .block-left .button-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto, sans-serif;
+  margin-top: 3rem;
+}
+
+.section5 .wrapper5 .block-left .button-block i {
+  font-size: 3.5rem;
+  color: #615cfd;
+  border-radius: 30px;
+  margin-right: 1.2rem;
+}
+
+.section5 .wrapper5 .block-left .button-block .button-text {
+  font-size: 1.2rem;
+}
+
+.section5 .wrapper5 .block-right {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+}
+
+.section5 .wrapper5 .block-right .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section5 .wrapper5 .block-right .img-box img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=main.css.map */

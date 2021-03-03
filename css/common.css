@@ -3,6 +3,7 @@ html, body {
   padding: 0;
   width: 100%;
   background: #ececec;
+  font-family: Muli, sans-serif;
 }
 
 * {
@@ -35,5 +36,25 @@ section {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-size: 2.3rem;
+}
+
+.desc {
+  font-weight: 100;
+  line-height: 1.8rem;
+  margin: 1rem 0;
+  color: #727272;
+}
+
+.comment {
+  font-size: 1.1rem;
+  font-weight: 100;
+  letter-spacing: 0.04rem;
+  width: auto;
+  line-height: 1.8rem;
 }
 /*# sourceMappingURL=common.css.map */
