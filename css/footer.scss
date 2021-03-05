@@ -1,5 +1,5 @@
 footer {
-    background: #0e0e0e;
+    background: #1F1F1F;
     color: white;
 
     .wrapper {
@@ -7,7 +7,7 @@ footer {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        padding: 1rem 2rem;
+        padding: 5rem 14rem 2rem;
         
         .footer-block-top {
             display: inherit;
@@ -15,8 +15,8 @@ footer {
             justify-content: space-around;
             align-items: center;
             border-bottom: 1px solid #494848;
-            margin: 2rem 0;
-            padding: 1rem 1rem 3rem;
+            margin: 1rem 0 0;
+            padding: 0.3rem 0.5rem 9rem;
 
             
             .logo-wrapper{
@@ -33,7 +33,7 @@ footer {
                     display: flex;
                     justify-content: space-around;
         
-                    font-size: 0.95rem;
+                    font-size: 0.9rem;
                 }
             }
 
@@ -58,6 +58,7 @@ footer {
         }
 
         .footer-block-bottom {
+            padding-top: 2rem;
             color: #aaaaaa;
         }
     }

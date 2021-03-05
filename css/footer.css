@@ -1,5 +1,5 @@
 footer {
-  background: #0e0e0e;
+  background: #1F1F1F;
   color: white;
 }
 
@@ -17,7 +17,7 @@ footer .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem 2rem;
+  padding: 5rem 14rem 2rem;
 }
 
 footer .wrapper .footer-block-top {
@@ -29,8 +29,8 @@ footer .wrapper .footer-block-top {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #494848;
-  margin: 2rem 0;
-  padding: 1rem 1rem 3rem;
+  margin: 1rem 0 0;
+  padding: 0.3rem 0.5rem 9rem;
 }
 
 footer .wrapper .footer-block-top .logo-wrapper {
@@ -55,7 +55,7 @@ footer .wrapper .footer-block-top nav .footer__nav__menu-block {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 footer .wrapper .footer-block-top .sns-block {
@@ -81,6 +81,7 @@ footer .wrapper .footer-block-top .sns-block .icon-box {
 }
 
 footer .wrapper .footer-block-bottom {
+  padding-top: 2rem;
   color: #aaaaaa;
 }
 /*# sourceMappingURL=footer.css.map */
