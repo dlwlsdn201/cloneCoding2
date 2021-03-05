@@ -355,7 +355,7 @@
             width: 100%;
             padding: 0 4rem;
 
-            .section6__block-bottom__content-box{
+            .section6__block-bottom__wrapper{
                 display: inherit;
                 flex-flow: column nowrap;
                 justify-content: center;
@@ -427,4 +427,89 @@
             }
         }
     }
+}
+
+.section8 {
+    .wrapper8 {
+        padding: 8rem 0;
+        .section8__block-top {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+
+            .text-contents-box {
+                display: inherit;
+                flex-flow: inherit;
+                justify-content: inherit;
+                align-items: inherit;
+                width: 70%;
+                .title, .desc {
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .section8__block-bottom {
+            display: flex;
+            flex-flow:column nowrap;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 3rem 14rem;
+
+            input,textarea {
+                border-radius: 25px;
+                padding: 0.9rem 1rem;
+                outline: none;
+                border: 1px solid  #8080807a;
+            }
+
+            & > div {
+                margin: 0.6rem;
+            }
+
+            .input-box1 {
+                display: inherit;
+                width: 100%;
+                justify-content: space-between;
+
+                input {
+                    flex: 0.48;
+                }
+            }
+            .input-box2 {
+                display: inherit;
+                width: 100%;
+
+                input {
+                    width: 100%;
+                }
+            }
+
+            .input-box3 {
+                display: inherit;
+                width: 100%;
+
+                textarea {
+                    display: inherit;
+                    width: 100%;
+                }
+            }
+
+            .submit-box {
+                display: inherit;
+                width: 100%;
+
+                input {
+                    @include buttonStyle;
+                    width: 100%;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+
 }
