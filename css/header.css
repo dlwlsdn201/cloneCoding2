@@ -17,7 +17,7 @@ header .header-wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2.2rem 2rem;
+  padding: 1rem 2rem;
 }
 
 @media screen and (min-width: 1441px) {
@@ -65,15 +65,67 @@ header .header-wrapper .header__nav__menu-wrapper {
 
 header .header-wrapper .header__nav__menu-wrapper .menu {
   font-size: 0.95rem;
+  padding: 2rem 0;
+}
+
+header .header-wrapper .header__nav__menu-wrapper .menu:hover > .submenu {
+  -webkit-animation: fadeInMenu 0.5s ease-in-out forwards;
+          animation: fadeInMenu 0.5s ease-in-out forwards;
+  display: block;
+}
+
+header .header-wrapper .header__nav__menu-wrapper .submenu {
+  background: white;
+  position: absolute;
+  color: black;
+  padding: 1rem 3rem 1rem 0.5rem;
+  display: none;
+}
+
+header .header-wrapper .header__nav__menu-wrapper .submenu .subitem {
+  margin-bottom: 0.5rem;
 }
 
 header .header-wrapper .form-nav-block {
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
-  font-size: 1.15em;
+  font-size: 1.05em;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+header .header-wrapper .form-nav-block .underline {
+  width: 100%;
+  margin-top: 0.6rem;
+  border: 1.5px solid #6a65f8;
+  background: #6a65f8;
+}
+
+@-webkit-keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
+}
+
+@keyframes fadeInMenu {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(2rem);
+            transform: translateY(2rem);
+  }
 }
 /*# sourceMappingURL=header.css.map */

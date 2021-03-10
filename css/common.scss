@@ -21,6 +21,20 @@ ul {
 
 li {
     list-style: none;
+    cursor: pointer;
+}
+
+
+
+.menu > a{
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    &:hover{
+        animation: fadeIn .2s forwards ease-in;
+    }
 }
 
 section {
@@ -51,4 +65,12 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.04rem;
     width: auto;
     line-height: 1.8rem;
+}
+
+@keyframes fadeIn{
+    from{
+        color: inherit;
+    }to{
+        color: #6a65f8;
+    }
 }

@@ -25,6 +25,17 @@ ul {
 
 li {
   list-style: none;
+  cursor: pointer;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  -webkit-animation: fadeIn .2s forwards ease-in;
+          animation: fadeIn .2s forwards ease-in;
 }
 
 section {
@@ -55,5 +66,23 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.04rem;
   width: auto;
   line-height: 1.8rem;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    color: inherit;
+  }
+  to {
+    color: #6a65f8;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    color: inherit;
+  }
+  to {
+    color: #6a65f8;
+  }
 }
 /*# sourceMappingURL=common.css.map */
