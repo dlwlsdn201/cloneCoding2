@@ -31,9 +31,6 @@ header {
         .logo-block{
             flex: 0.3;
             justify-self: baseline;
-            // justify-content: flex-start;
-            // flex-shrink: default;
-            // width: auto;
 
             img{
                 width: auto;
@@ -44,8 +41,12 @@ header {
                 flex: 0.4;
             }
         }
+
         nav {
             flex: 1;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
             .header__nav__menu-wrapper {
                 width: 100%;
                 display: flex;
@@ -80,6 +81,10 @@ header {
                         margin-bottom: 1rem;
                     }
                 }
+
+            }
+            .sidebar {
+                display: none;
             }
         
 
@@ -107,9 +112,42 @@ header {
             @media screen and (max-width: 768px){
                 display: block;
                 font-size: 1.4rem;
-                margin: 0 0.2rem;
+                margin-right: 3%;
                 padding: 0 0.2rem;
                 cursor: pointer;
+            }
+        }
+
+        .sidebar-off {
+            display: none;
+        }
+
+        .sidebar-on {
+            z-index: -10;
+            position: absolute;
+            top: 100%;
+            right: 5%;
+            left: 5%;
+            margin: 0 auto;
+            padding: 1rem;
+            width: 85%;
+            background: white;
+            color: black;
+            height: auto;
+            
+
+            .sidebar__menu {
+                display: flex;
+                flex-direction: column;
+
+                .menu__item {
+                    margin: 0.3rem 0;
+
+                    a{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
             }
         }
     }
@@ -121,7 +159,14 @@ header {
         transform: translateY(4rem);
     }to{
         opacity: 1;
-        
         transform: translateY(2rem);
+    }
+}
+
+@keyframes rollershow {
+    from{
+        height: 0;
+    }to{
+        height: auto;
     }
 }

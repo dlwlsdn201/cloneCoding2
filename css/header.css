@@ -65,6 +65,16 @@ header .header-wrapper nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .header-wrapper nav .header__nav__menu-wrapper {
@@ -107,6 +117,10 @@ header .header-wrapper nav .header__nav__menu-wrapper .submenu .subitem {
   margin-bottom: 1rem;
 }
 
+header .header-wrapper nav .sidebar {
+  display: none;
+}
+
 header .header-wrapper .form-nav-block {
   -webkit-box-flex: 0.3;
       -ms-flex: 0.3;
@@ -138,10 +152,51 @@ header .header-wrapper .menu-bar-icon {
   header .header-wrapper .menu-bar-icon {
     display: block;
     font-size: 1.4rem;
-    margin: 0 0.2rem;
+    margin-right: 3%;
     padding: 0 0.2rem;
     cursor: pointer;
   }
+}
+
+header .header-wrapper .sidebar-off {
+  display: none;
+}
+
+header .header-wrapper .sidebar-on {
+  z-index: -10;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  left: 5%;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 85%;
+  background: white;
+  color: black;
+  height: auto;
+}
+
+header .header-wrapper .sidebar-on .sidebar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .header-wrapper .sidebar-on .sidebar__menu .menu__item {
+  margin: 0.3rem 0;
+}
+
+header .header-wrapper .sidebar-on .sidebar__menu .menu__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @-webkit-keyframes fadeInMenu {
@@ -167,6 +222,24 @@ header .header-wrapper .menu-bar-icon {
     opacity: 1;
     -webkit-transform: translateY(2rem);
             transform: translateY(2rem);
+  }
+}
+
+@-webkit-keyframes rollershow {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
+  }
+}
+
+@keyframes rollershow {
+  from {
+    height: 0;
+  }
+  to {
+    height: auto;
   }
 }
 /*# sourceMappingURL=header.css.map */
