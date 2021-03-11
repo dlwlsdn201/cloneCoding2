@@ -19,6 +19,16 @@
         background: #615cfd;
 }
 
+@keyframes slideFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-1rem);
+    }to {
+        opacity: 1;
+        tranmform: translateX(0rem);
+    }
+}
+
 // ---------------------------------
 
 .section1{
@@ -34,6 +44,8 @@
         .section1__contents-block{
             position: absolute;
             left: 11.5%;
+            animation: slideFadeIn .6s forwards linear;
+
 
             @media screen and (min-width: 1441px){
                 left: 28%;
