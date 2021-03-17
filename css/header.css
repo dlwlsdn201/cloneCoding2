@@ -107,8 +107,8 @@ header .header-wrapper nav .header__nav__menu-wrapper .menu {
 }
 
 header .header-wrapper nav .header__nav__menu-wrapper .menu:hover > .submenu {
-  -webkit-animation: fadeInMenu 0.5s ease-in-out forwards;
-          animation: fadeInMenu 0.5s ease-in-out forwards;
+  -webkit-animation: fadeInMenu 0.3s ease-in-out forwards;
+          animation: fadeInMenu 0.3s ease-in-out forwards;
   display: block;
   cursor: auto;
 }
@@ -126,7 +126,7 @@ header .header-wrapper nav .header__nav__menu-wrapper .submenu .subitem {
   margin-bottom: 1rem;
 }
 
-header .header-wrapper nav .sidebar {
+header .header-wrapper nav .submenu {
   display: none;
 }
 

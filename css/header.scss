@@ -69,7 +69,7 @@ header {
                 
                 .menu:hover{
                     &>.submenu {
-                        animation: fadeInMenu 0.5s ease-in-out forwards;
+                        animation: fadeInMenu 0.3s ease-in-out forwards;
                         display: block;
                         cursor: auto;
                     }
@@ -89,7 +89,7 @@ header {
                 }
 
             }
-            .sidebar {
+            .submenu {
                 display: none;
             }
         
