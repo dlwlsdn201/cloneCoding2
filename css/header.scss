@@ -47,6 +47,7 @@ header {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
+
             .header__nav__menu-wrapper {
                 width: 100%;
                 display: flex;
@@ -118,11 +119,11 @@ header {
             }
         }
 
-        .sidebar-off {
+        .sidebar-768px-off {
             display: none;
         }
 
-        .sidebar-on {
+        .sidebar-768px-on {
             z-index: -10;
             position: absolute;
             top: 100%;
@@ -146,6 +147,23 @@ header {
                     a{
                         display: flex;
                         justify-content: space-between;
+                    }
+
+                    .submenu-off {
+                        display: none;
+                    }
+
+                    .submenu-on {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        width: 100%;
+                        padding: 1rem 1.5rem;
+                        
+                        .subitem { 
+                            margin: 0.3rem 0;
+                        }
+                        
                     }
                 }
             }

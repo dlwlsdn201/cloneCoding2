@@ -36,7 +36,7 @@
                             <a>Pages
                                 <i class="fas fa-angle-down"></i>
                             </a>
-                            <ul class="menu4__submenu submenu">
+                            <ul class="menu4__submenu submenu-off">
                                 <li class="subitem">
                                     <a>
                                         Portfolio Details
@@ -68,7 +68,7 @@
                             <a href="#">Contact</a>
                         </li>
                     </ul>
-                    <div class="sidebar-off" id="sidebar">
+                    <div class="sidebar-768px-off" id="sidebar">
                         <ul class="sidebar__menu">
                             <li class="menu__item item1">
                                 <a href='#'>
@@ -85,17 +85,42 @@
                                     Portfolio
                                 </a>
                             </li>
-                            <li class="menu__item item4">
+                            <li class="menu__item item4" id="item4">
                                 <a href='#'>
                                     Pages
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-plus" id="plusIcon"></i>
                                 </a>
+                                <ul class="item4__submenu submenu-off" id="submenuItem4">
+                                    <li class="subitem">
+                                        <a>
+                                            Portfolio Details
+                                        </a>
+                                    </li>
+                                    <li class="subitem">
+                                        <a>
+                                            About
+                                        </a>
+                                    </li>
+                                    <li class="subitem">
+                                        <a>
+                                            Elements
+                                        </a>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="menu__item item5">
+                            <li class="menu__item item5" id="item5">
                                 <a href='#'>
                                     Blog
-                                    <i class="fas fa-plus"></i>
+                                    <i class="fas fa-plus" id="plusIcon"></i>
                                 </a>
+                                <ul class="menu5__submenu submenu-off" id="submenuItem5">
+                                    <li class="subitem">
+                                        <a>Blog</a>
+                                    </li>
+                                    <li class="subitem">
+                                        <a>Single-Blog</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="menu__item item5">
                                 <a href='#'>
@@ -370,5 +395,6 @@
         </footer>
     </div>
     <script src="./js/sidebar.js"></script>
+    <script src="./js/menubarFormal.js"></script>
 </body>
 </html>
