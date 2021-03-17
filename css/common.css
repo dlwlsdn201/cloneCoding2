@@ -38,6 +38,10 @@ li {
   cursor: pointer;
 }
 
+button {
+  cursor: pointer;
+}
+
 .menu > a {
   text-decoration: none;
   color: white;

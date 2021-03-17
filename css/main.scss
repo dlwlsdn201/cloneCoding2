@@ -17,13 +17,18 @@
 
 @mixin buttonStyle {
         outline: none;
-        border: none;
+        border: 1px solid #615cfd;
         border-radius: 25px;
         width: auto;
         padding: 0.95rem 2.1rem;
         font-size: 1rem;
         color: white;
         background: #615cfd;
+
+        &:hover {
+            animation: buttonHover .2s forwards linear;
+
+        }
 }
 
 //text 컨텐츠 슬라이드 페이드인 애니메이션 효과
@@ -34,6 +39,16 @@
     }to {
         opacity: 1;
         tranmform: translateX(0rem);
+    }
+}
+
+@keyframes buttonHover {
+    from{
+        background-color: #615cfd;
+    }to{
+        background: none;
+        color: #615cfd;
+
     }
 }
 
@@ -83,30 +98,34 @@
                 bottom: 12%;
             }
 
-            @media screen and (min-width: 769px) and  (max-width: 1440px){
-                bottom: 22%;
+            @media screen and (min-width: 769px){
+                bottom: 35%;
+                left: 15%;
             }
 
             .section1__text {
                 line-height: 5.3rem;
-                width: 89%;
                 font-family: roboto, sans-serif;
-                margin: 0 0 15%;
 
                 @media screen and (max-width: 425px){
                     font-size: 2rem;
                     line-height: 2.5rem;
+                    width: 89%;
+                    margin: 0 0 15%;
                 }
 
                 @media screen and (min-width: 426px) and (max-width: 768px){
                     font-size: 3rem;
                     line-height: 4rem;
+                    width: 89%;
+                    margin: 0 0 15%;
                 }
 
-                @media screen and (min-width: 769px) and (max-width: 1440px){
-
-                    font-size: 2.8rem;
-                    line-height: 3.5rem;
+                @media screen and (min-width: 769px){
+                    font-size: 4.6rem;
+                    line-height: 5rem;
+                    width: 70%;
+                    margin: 0 0 5%;
                 }
             }
     

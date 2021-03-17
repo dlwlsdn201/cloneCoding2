@@ -42,6 +42,26 @@
   }
 }
 
+@-webkit-keyframes buttonHover {
+  from {
+    background-color: #615cfd;
+  }
+  to {
+    background: none;
+    color: #615cfd;
+  }
+}
+
+@keyframes buttonHover {
+  from {
+    background-color: #615cfd;
+  }
+  to {
+    background: none;
+    color: #615cfd;
+  }
+}
+
 .section1 .wrapper1 {
   background: black;
   color: white;
@@ -96,23 +116,24 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
   .section1 .wrapper1 .section1__contents-block {
-    bottom: 22%;
+    bottom: 35%;
+    left: 15%;
   }
 }
 
 .section1 .wrapper1 .section1__contents-block .section1__text {
   line-height: 5.3rem;
-  width: 89%;
   font-family: roboto, sans-serif;
-  margin: 0 0 15%;
 }
 
 @media screen and (max-width: 425px) {
   .section1 .wrapper1 .section1__contents-block .section1__text {
     font-size: 2rem;
     line-height: 2.5rem;
+    width: 89%;
+    margin: 0 0 15%;
   }
 }
 
@@ -120,25 +141,34 @@
   .section1 .wrapper1 .section1__contents-block .section1__text {
     font-size: 3rem;
     line-height: 4rem;
+    width: 89%;
+    margin: 0 0 15%;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) {
   .section1 .wrapper1 .section1__contents-block .section1__text {
-    font-size: 2.8rem;
-    line-height: 3.5rem;
+    font-size: 4.6rem;
+    line-height: 5rem;
+    width: 70%;
+    margin: 0 0 5%;
   }
 }
 
 .section1 .wrapper1 .section1__contents-block .section1__btn {
   outline: none;
-  border: none;
+  border: 1px solid #615cfd;
   border-radius: 25px;
   width: auto;
   padding: 0.95rem 2.1rem;
   font-size: 1rem;
   color: white;
   background: #615cfd;
+}
+
+.section1 .wrapper1 .section1__contents-block .section1__btn:hover {
+  -webkit-animation: buttonHover .2s forwards linear;
+          animation: buttonHover .2s forwards linear;
 }
 
 .section2 .wrapper2 {
@@ -281,7 +311,7 @@
 
 .section3 .wrapper3 .section3__right .contents-block .section3__btn {
   outline: none;
-  border: none;
+  border: 1px solid #615cfd;
   border-radius: 25px;
   width: auto;
   padding: 0.95rem 2.1rem;
@@ -292,6 +322,11 @@
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+}
+
+.section3 .wrapper3 .section3__right .contents-block .section3__btn:hover {
+  -webkit-animation: buttonHover .2s forwards linear;
+          animation: buttonHover .2s forwards linear;
 }
 
 .section4 {
@@ -727,7 +762,7 @@
 
 .section8 .wrapper8 .section8__block-bottom .submit-box input {
   outline: none;
-  border: none;
+  border: 1px solid #615cfd;
   border-radius: 25px;
   width: auto;
   padding: 0.95rem 2.1rem;
@@ -736,5 +771,10 @@
   background: #615cfd;
   width: 100%;
   cursor: pointer;
+}
+
+.section8 .wrapper8 .section8__block-bottom .submit-box input:hover {
+  -webkit-animation: buttonHover .2s forwards linear;
+          animation: buttonHover .2s forwards linear;
 }
 /*# sourceMappingURL=main.css.map */
