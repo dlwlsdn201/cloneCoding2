@@ -237,7 +237,7 @@
         
 
 
-        @media screen and (max-width: 767px){
+        @media screen and (min-width: 325px) and (max-width: 767px){
             .section2__title-block {
                 display: inherit;
                 flex-flow: column wrap;
@@ -263,6 +263,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 box-sizing: border-box;
+                border: 1px solid blue;
                 @media screen and (min-width: 538px){
                     width: 33rem;
                 }
@@ -302,7 +303,7 @@
             }
         }
     
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) and (max-width: 1024px){
             .section2__title-block {
                 width: 95%;
 
@@ -350,25 +351,25 @@
             }
         }
     
-        @media screen and (min-width: 769px) and (max-width: 1024px){
-            .section2__title-block {
-                width: 40%;
-                line-height: 300%;
+        // @media screen and (min-width: 768px) {  //너비가 768px~ 1024px 인 디바이스일 때 적용할 css style
+        //     .section2__title-block {                                   // ex) 테블릿 ~ 노트북
+        //         width: 40%;
+        //         line-height: 300%;
 
-                .section2__contents__title{
-                    margin: 3% 0 0;
-                }
-            }
-            .section2__contents-block {
-                .contents-box {
-                    flex: 0.3;
-                    padding: 5% 0.5%;
-                }
-            }
-        }
+        //         .section2__contents__title{
+        //             margin: 3% 0 0;
+        //         }
+        //     }
+        //     .section2__contents-block {
+        //         .contents-box {
+        //             flex: 0.3;
+        //             padding: 5% 0.5%;
+        //         }
+        //     }
+        // }
     
-        @media screen and (min-width: 1025px){
-            padding: 10% 1%;
+        @media screen and (min-width: 1025px){  //너비가 1025px 이상인 디바이스일 때 적용할 css style
+            padding: 10% 1%;                    // ex) 노트북~ 데스크탑 모니터
             .section2__title-block {
                 width: 40%;
                 line-height: 300%;
