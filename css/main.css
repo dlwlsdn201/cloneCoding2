@@ -804,7 +804,9 @@
 }
 
 .section5 {
-  padding: 8rem 0;
+  padding: 10rem 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .section5 .wrapper5 {
@@ -885,12 +887,10 @@
 .section5 .wrapper5 .block-right .img-box img {
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 80%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
