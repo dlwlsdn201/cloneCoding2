@@ -7,15 +7,14 @@ footer {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
-        padding: 5rem 14rem 2rem;
-        
+
         .footer-block-top {
             display: inherit;
-            width: 100%;
+            width: 70rem;
             justify-content: space-around;
             align-items: center;
             border-bottom: 1px solid #494848;
-            margin: 1rem 0 0;
+            margin: 0;
             padding: 0.3rem 0.5rem 9rem;
 
             
@@ -24,34 +23,34 @@ footer {
                 flex: 1;
             }
 
-            nav {
+            .footer__nav__menu-block {
                 flex: 0.9;
+                display: flex;
+                justify-content: space-around;
                 width: 40rem;
                 padding-left: 2rem;
                 padding-right: 7rem;
-                .footer__nav__menu-block {
-                    display: flex;
-                    justify-content: space-around;
-        
-                    font-size: 0.9rem;
-                }
+                font-size: 0.9rem;
             }
 
-            .sns-block {
-                flex: 0.3;
-                display: inherit;
-                justify-content: space-around;
-                padding-left: 3rem;
 
-                .icon-box {
-                    width: 2.5rem;
-                    text-align: center;
-                    border: 1px solid white;
-                    border-radius: 50px;
-                    padding: 0.5rem 0;
-
-                    & {
-                        margin-left: 0.8rem;
+            .sns-wrapper {
+                .sns-block {
+                    display: flex;
+                    width: 12rem;
+                    justify-content: space-around;
+                    padding-left: 0;
+    
+                    .icon-box {
+                        width: 2.5rem;
+                        text-align: center;
+                        border: 1px solid white;
+                        border-radius: 50px;
+                        padding: 0.5rem 0;
+    
+                        & {
+                            margin-left: 0.8rem;
+                        }
                     }
                 }
             }
@@ -60,6 +59,277 @@ footer {
         .footer-block-bottom {
             padding-top: 2rem;
             color: #aaaaaa;
+            font-weight: bolder;
+            a {
+                font-weight: initial;
+                color: #6a65f8;
+            }
         }
     }
+
+
+    @media screen and (min-width: 320px) and (max-width: 576px){
+        .wrapper {
+            flex-wrap: wrap;
+            padding: 1rem 0rem 1rem;
+
+            .footer-block-top {
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                align-items: space-around;
+                margin: 0;
+                padding: 2rem 0rem;
+    
+                
+                .logo-block{
+                    width: 100%;
+                    justify-self: flex-start;
+                    padding-right: 0;
+                    padding-left: 1.2rem;
+                }
+    
+                nav {
+                    justify-self: flex-start;
+                    width: 100%;
+
+                    .footer__nav__menu-block{
+                        flex-wrap: wrap;
+                        margin-top: 1rem;
+                        padding-left: 0.2rem;
+                        padding-right: 0;
+                        width: 100%;
+                        justify-content: flex-start;
+                        .menu {
+                            margin-left: 1rem;
+                            width: auto;
+                        }
+                    }
+                }
+                .sns-wrapper {
+                    width: 100%;
+                    .sns-block {
+                        justify-self: flex-start;
+                        flex-flow: row nowrap;
+                        margin-top: 2rem;
+                        width: 13rem;
+                        margin-right: 0;
+                        padding-left: 0.7rem;
+                        .icon-box {
+                            width: 2.5rem;
+                            border-radius: 50px;
+                            padding: 0.5rem 0;
+        
+                            & {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .footer-block-bottom {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                padding: 1.8rem 0 0;
+                font-size: 0.8rem;
+
+                p {
+                    text-align: center;
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 767px){
+        .wrapper {
+            flex-wrap: wrap;
+            padding: 1rem 0rem 1rem;
+
+            .footer-block-top {
+                flex-wrap: wrap;
+                width: 100vw;
+                justify-content: center;
+                align-items: space-around;
+                border: 1px solid blue;
+                margin: 0;
+                padding: 2rem 2rem;
+    
+                
+                .logo-block{
+                    width: 100%;
+                    justify-self: flex-start;
+                    padding-right: 0;
+                    padding-left: 2rem;
+                }
+    
+                nav {
+                    justify-self: flex-start;
+                    width: 100%;
+
+                    .footer__nav__menu-block{
+                        margin-top: 1rem;
+                        padding-left: 1rem;
+                        justify-content: flex-start;
+                        .menu {
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+                .sns-wrapper {
+                    width: 100%;
+                    .sns-block {
+                        justify-self: flex-start;
+                        flex-flow: row nowrap;
+                        margin-top: 2rem;
+                        width: 15rem;
+                        margin-right: 0;
+                        padding-left: 1.5rem;
+                        .icon-box {
+                            width: 2.5rem;
+                            border-radius: 50px;
+                            padding: 0.5rem 0;
+        
+                            & {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .footer-block-bottom {
+                padding: 2rem 0 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 992px){
+        .wrapper {
+            flex-wrap: wrap;
+            padding: 3rem 0rem 2rem;
+
+            .footer-block-top {
+                flex-wrap: wrap;
+                width: auto;
+                justify-content: space-around;
+                align-items: space-around;
+                border: 1px solid blue;
+                margin: 0;
+                padding: 0.3rem 0.5rem 3rem;
+    
+                
+                .logo-block{
+                    padding-right: 1rem;
+                }
+    
+                .footer__nav__menu-block {
+                    border: 1px solid orange;
+                    width: 34rem;
+                    padding: 0;
+                    padding-right: 2rem;
+                    .footer__nav__menu-block {
+                        font-size: 0.9rem;
+                    }
+                }
+                .sns-wrapper {
+                    .sns-block {
+                        margin-top: 2rem;
+                        border: 1px solid green;
+                        .icon-box {
+                            width: 2.5rem;
+                            border-radius: 50px;
+                            padding: 0.5rem 0;
+        
+                            & {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .footer-block-bottom {
+                padding-top: 2rem;
+            }
+        }
+    }
+
+    
+    @media screen and (min-width: 992px) and (max-width: 1200px){
+        .wrapper {
+            padding: 6rem 14rem 2rem;
+        
+            .footer-block-top {
+                width: 59rem;
+                margin: 0;
+                padding: 0.3rem 0.5rem 6rem;
+    
+                
+                .logo-block{
+                    margin-right: 1rem;
+                }
+    
+                nav {
+                    width: 42rem;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                }
+            }
+    
+    }
+    }
+
+    @media screen and (min-width: 1200px){
+        .wrapper {
+            padding: 6rem 0rem 2rem;
+            
+            .footer-block-top {
+                width: 70rem;
+                margin: 0;
+                padding: 0.3rem 0.5rem 9rem;
+    
+                
+                .logo-wrapper{
+                    width: 5rem;
+                    flex: 1;
+                }
+    
+                nav {
+                    flex: 0.9;
+                    width: 40rem;
+                    padding-left: 2rem;
+                    padding-right: 7rem;
+                    .footer__nav__menu-block {
+                        font-size: 0.9rem;
+                    }
+                }
+                .sns-wrapper {
+                    .sns-block {
+                        flex: 0.3;
+                        padding-left: 3rem;
+        
+                        .icon-box {
+                            width: 2.5rem;
+                            border-radius: 50px;
+                            padding: 0.5rem 0;
+        
+                            & {
+                                margin-left: 0.8rem;
+                            }
+                        }
+                    }
+
+                }
+            }
+    
+            .footer-block-bottom {
+                padding-top: 2rem;
+        }
+    }
+}
+
 }

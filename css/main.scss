@@ -266,7 +266,6 @@
                 flex-direction: column;
                 justify-content: space-between;
                 box-sizing: border-box;
-                border: 1px solid blue;
                 @media screen and (min-width: 538px){
                     width: 33rem;
                 }
@@ -1025,7 +1024,6 @@
         height: 125vh;
         padding: 0;
         .background{
-            border : 1px solid red;
             width: 100%;
             height: 100%;
         }
