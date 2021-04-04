@@ -4,12 +4,7 @@ html, body {
   width: 100%;
   background: #fcfbfb;
   font-family: Muli, sans-serif;
-}
-
-@media screen and (max-width: 1024px) {
-  html, body {
-    overflow-x: hidden;
-  }
+  overflow-x: hidden;
 }
 
 html .container, body .container {

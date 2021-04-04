@@ -4,17 +4,14 @@ html, body {
     width: 100%;
     background: #fcfbfb;
     font-family: Muli, sans-serif;
+    overflow-x: hidden;
 
-    
-    @media screen and (max-width: 1024px){
-        overflow-x: hidden;
-    }
+    .container{
+        width: 100%;
 
-.container{
-    width: 100%;
-
-    }
+        }
 }
+
 *{ box-sizing: border-box;}
 
 img { 
