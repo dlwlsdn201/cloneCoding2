@@ -385,7 +385,7 @@
 .section3{ 
     .wrapper3 {
         flex-flow: row nowrap;
-        height: 87vh;
+        height: 95vh;
         .section3__left{
             box-sizing: border-box;
             flex: 1;
@@ -401,16 +401,14 @@
             background-color: #1F1F1F;
             color: #fafafa;
             flex: 1;
-            height: 100%;
             display: inherit;
             align-items: center;
             font-family: 'Muli, sans-serif';
             .contents-block {
-                padding: 6rem 4.2rem 5rem 7rem;
                 display: inherit;
                 flex-flow: column wrap;
                 justify-content: flex-start;
-                width: 38rem;
+                
                 
                 .section3__contents__category {
                     font-family: 'Roboto';
@@ -539,7 +537,34 @@
         }
 
         @media screen and (min-width: 1025px){
-            
+            .section3__right {
+                background-color: #1F1F1F;
+                height: 100%;
+                width: 100%;
+
+                .contents-block {
+                    padding: 5rem 4rem 5rem 6rem;
+                    width: 43rem;
+                    .section3__contents__title {
+                        margin-top: 1rem;
+                        margin-bottom: 3rem;
+                        width: 100%;
+                        font-size: 2.5rem;
+                        letter-spacing: -0.1rem;
+                    }
+
+                    .section3__contents__desc {
+                        width: 28rem;
+                        letter-spacing: -0.01rem;
+                    }
+
+                    .section3__contents__comment {
+                        width: 30rem;
+                        letter-spacing: 0.02rem;
+                    }
+                    // margin-left: 3rem;
+                }
+            }
         }
 
 
@@ -1131,7 +1156,7 @@
             align-items: center;
             padding: 3rem 0;
 
-            input,textarea {
+            input,textarea {                     
                 border-radius: 25px;
                 padding: 0.9rem 1rem;
                 outline: none;
@@ -1299,7 +1324,19 @@
 
     @media screen and (min-width: 1200px){
         .wrapper8 {
+            padding: 8rem 0;
+            .section8__block-top {
+    
+                .text-contents-box {
+                    width: 30rem;
+                }
+    
+            }
+    
             .section8__block-bottom {
+                // display: flex;
+                width: 38rem;
+
                 .input-box1 {
                     display: inherit;
                     width: inherit;
