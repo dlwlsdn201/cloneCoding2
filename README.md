@@ -4,11 +4,11 @@
 ## **Preview**
 
 <div align="center" display="flex" flex-direction="column" align-items="center">
-  <img src="https://user-images.githubusercontent.com/53039583/113658962-0a9d8900-96dc-11eb-84da-1281a53c5e40.gif" alt="템플릿"/>
+  <img src="https://user-images.githubusercontent.com/53039583/113658962-0a9d8900-96dc-11eb-84da-1281a53c5e40.gif" alt="템플릿" width="768" height="391"/>
   <h4 align="center"> [Template] </h4>
   <br>
   <br>
-  <img src="https://user-images.githubusercontent.com/53039583/113661897-f197d680-96e1-11eb-8d28-e9d8eacb0b97.gif" alt="템플릿"/>
+  <img src="https://user-images.githubusercontent.com/53039583/113665205-0a0aef80-96e8-11eb-9ca1-2fca42ea387e.gif" alt="템플릿" width="768" height="391"/>
   <h4 align="center"> [clone Product] </h4>
 </div>
 
