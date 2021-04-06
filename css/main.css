@@ -732,13 +732,21 @@
 }
 
 .section4 .section4__imgs-block .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
   width: 100%;
 }
 
 .section4 .section4__imgs-block .img-box img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: inherit;
 }
 

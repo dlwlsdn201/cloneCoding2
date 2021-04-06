@@ -610,13 +610,16 @@
         justify-items: center;
         
         .img-box {
+            display: flex;
+            justify-content: center;
             border-radius: 5px;
             width: 100%;
         }
 
         .img-box img{
-            max-width: 100%;
+            width: 100%;
             height: auto;
+            object-fit: cover;
             border-radius: inherit;
         }
 
@@ -638,6 +641,7 @@
             grid-template-columns: 1fr;
             grid-gap: 1.8rem;
             grid-auto-rows: minmax(10rem, auto);
+            
             
 
             .img-box:nth-child(odd) {
