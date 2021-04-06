@@ -607,15 +607,16 @@
         grid-template-columns: repeat(3, 20rem);
         grid-gap: 2rem;
         grid-auto-rows: 350px;
-        // justify-items: center;
+        justify-items: center;
         
         .img-box {
             border-radius: 5px;
+            width: 100%;
         }
 
         .img-box img{
             max-width: 100%;
-            height: 100%;
+            height: auto;
             border-radius: inherit;
         }
 
