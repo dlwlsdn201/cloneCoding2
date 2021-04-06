@@ -755,8 +755,8 @@
     width: 100%;
   }
   .section4 .section4__imgs-block {
-    -ms-grid-columns: (100%)[1];
-        grid-template-columns: repeat(1, 100%);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.8rem;
     grid-auto-rows: minmax(200px, auto);
   }
