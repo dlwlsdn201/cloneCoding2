@@ -42,6 +42,9 @@ footer {
                     padding-left: 0;
     
                     .icon-box {
+                        &:hover {
+                            cursor: pointer;
+                        }
                         width: 2.5rem;
                         text-align: center;
                         border: 1px solid white;
@@ -116,14 +119,10 @@ footer {
                         margin-right: 0;
                         padding-left: 0.7rem;
                         .icon-box {
-                            width: 2.5rem;
-                            border-radius: 50px;
-                            padding: 0.5rem 0;
-        
-                            & {
-                                margin-left: 0;
-                            }
+                            margin-left: 0;
+                            
                         }
+                        
                     }
                 }
             }
@@ -187,15 +186,6 @@ footer {
                         width: 15rem;
                         margin-right: 0;
                         padding-left: 1.5rem;
-                        .icon-box {
-                            width: 2.5rem;
-                            border-radius: 50px;
-                            padding: 0.5rem 0;
-        
-                            & {
-                                margin-left: 0;
-                            }
-                        }
                     }
                 }
             }
@@ -238,16 +228,6 @@ footer {
                 .sns-wrapper {
                     .sns-block {
                         margin-top: 2rem;
-                        border: 1px solid green;
-                        .icon-box {
-                            width: 2.5rem;
-                            border-radius: 50px;
-                            padding: 0.5rem 0;
-        
-                            & {
-                                margin-left: 0;
-                            }
-                        }
                     }
                 }
             }
@@ -299,30 +279,33 @@ footer {
                 }
     
                 nav {
-                    flex: 0.9;
+                    flex: 0.8;
                     width: 40rem;
-                    padding-left: 2rem;
-                    padding-right: 7rem;
+                    padding-left: 0;
+                    padding-right: 9rem;
                     .footer__nav__menu-block {
                         font-size: 0.9rem;
+                        padding-left: 0;
+                        margin-left: 0;
+                        .menu {
+                            display: inline-block;
+                            margin-left: 2rem;
+                        }
                     }
                 }
                 .sns-wrapper {
                     .sns-block {
-                        flex: 0.3;
-                        padding-left: 3rem;
+                        padding-left: 0rem;
+                        
         
                         .icon-box {
-                            width: 2.5rem;
+                            width: 4rem;
                             border-radius: 50px;
                             padding: 0.5rem 0;
-        
-                            & {
-                                margin-left: 0.8rem;
-                            }
+                            margin-left: 0.8rem;
+                            
                         }
                     }
-
                 }
             }
     
