@@ -625,7 +625,7 @@
 
     }
 
-    @media screen and (max-width: 576px){
+    @media screen and (min-width: 320px) and (max-width: 576px){
         padding: 3rem 3%;
 
         .section4__contents-block{
