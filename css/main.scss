@@ -605,8 +605,6 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         .section4__imgs-block {
             display: grid;
             // grid-template-columns: repeat(3, 1fr);  //창 크기에 따라 width 변화됨
-
-            //1440px / 1224px / 
             grid-template-columns: repeat(3, 20rem);
             grid-gap: 2rem;
             grid-auto-rows: 350px;
@@ -625,32 +623,24 @@ $UNDER_IPHONE5 : calc($IPHONE5);
                 object-fit: cover;
                 border-radius: inherit;
             }
-
-
-
         }
 
-        @media screen and (min-width: 320px) and (max-width: 576px){
-            
-            .section4__contents-block{
-                .section4__contents__desc {
-                    width: 100%;
-                }
-            }
-
-            .section4__imgs-block {
-                grid-template-columns: 1fr;
-                grid-gap: 1.8rem;
-                grid-auto-rows: minmax(10rem, auto);
-                
-                
-
-                .img-box:nth-child(odd) {
-                    // grid-column: auto;
-                }
-            }
+    @media screen and (min-width: $IPHONE5) and (max-width: $TABLET){
         
+        .section4__contents-block{
+            .section4__contents__desc {
+                width: 100%;
+            }
         }
+
+        .section4__imgs-block {
+            grid-template-columns: 1fr;
+            grid-gap: 1.8rem;
+            grid-auto-rows: minmax(5rem, auto);
+            border: 1px solid red;
+        }
+    
+    }
 
     @media screen and (min-width: 576px) and (max-width: 768px){
         padding: 4rem 2%;
