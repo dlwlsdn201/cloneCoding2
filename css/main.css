@@ -586,9 +586,6 @@
 }
 
 @media screen and (min-width: 426px) and (max-width: 991px) {
-  .section3 .wrapper3 {
-    height: 81vh;
-  }
   .section3 .wrapper3 .section3__left {
     display: none;
   }
@@ -756,6 +753,7 @@
     width: 100%;
   }
   .section4 .wrapper4 .section4__imgs-block {
+    background: red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -773,7 +771,7 @@
   }
 }
 
-@media screen and (min-width: calc($TABLET + 1px) 1) and (max-width: calc($NOTEBOOK)) {
+@media screen and (min-width: 768px) and (max-width: 1060px) {
   .section4 .wrapper4 {
     padding: 8rem 1rem;
   }

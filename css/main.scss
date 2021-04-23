@@ -476,7 +476,6 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         }
 
         @media screen and (min-width: 426px) and (max-width: 991px){
-            height: 81vh;
 
             .section3__left{
                 display: none;
@@ -634,6 +633,7 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         }
 
         .section4__imgs-block {
+            background: red;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -646,7 +646,7 @@ $UNDER_IPHONE5 : calc($IPHONE5);
     
     }
 
-    @media screen and (min-width: $OVER_TABLET + 1) and (max-width: $UNDER_NOTEBOOK){
+    @media screen and (min-width: $TABLET) and (max-width: $NOTEBOOK){
         padding: 8rem 1rem;
         .section4__contents-block{
 
@@ -657,7 +657,6 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         }
 
         .section4__imgs-block {
-
             grid-template-columns: repeat(4, 9.5rem);
             grid-gap: 1.8rem;
             // background: gray;
