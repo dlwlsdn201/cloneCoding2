@@ -5,7 +5,7 @@ $TABLET : '768px';
 $NOTEBOOK: '1060px';
 $DESKTOP: '1920px';
 
-$OVER_IPHONE5 : calc(IPHONE5 + 1px);
+$OVER_IPHONE5 : calc($IPHONE5 + 1px);
 $OVER_MOBILE :  calc($MOBILE + 1px);
 $OVER_TABLET :  calc($TABLET + 1px);
 $OVER_NOTEBOOK :  calc($NOTEBOOK + 1px);
@@ -626,6 +626,7 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         }
 
     @media screen and (min-width: $IPHONE5) and (max-width: $TABLET){
+        height:auto;
         
         .section4__contents-block{
             .section4__contents__desc {
@@ -634,34 +635,18 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         }
 
         .section4__imgs-block {
-            grid-template-columns: 1fr;
-            grid-gap: 1.8rem;
-            grid-auto-rows: minmax(5rem, auto);
-            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+
         }
     
     }
 
-    @media screen and (min-width: 576px) and (max-width: 768px){
-        padding: 4rem 2%;
-
-        .section4__imgs-block {
-            grid-template-columns: repeat(1, 32rem);
-            grid-gap: 1.8rem;
-            // background: gray;
-            grid-auto-rows: minmax(300px,auto);
-            
-            .img-box:nth-child(odd) {
-                grid-column: auto;
-            }
-        }
-
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 992px){
+    @media screen and (min-width: $OVER_TABLET + 1) and (max-width: $UNDER_NOTEBOOK){
         padding: 8rem 1rem;
-
         .section4__contents-block{
+
+    
             .section4__contents__desc {
                 width: 95%;
             }

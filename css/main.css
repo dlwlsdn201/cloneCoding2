@@ -752,34 +752,24 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
+  .section4 .wrapper4 {
+    height: auto;
+  }
   .section4 .wrapper4 .section4__contents-block .section4__contents__desc {
     width: 100%;
   }
   .section4 .wrapper4 .section4__imgs-block {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 1.8rem;
-    grid-auto-rows: minmax(5rem, auto);
-    border: 1px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
-  .section4 .wrapper4 {
-    padding: 4rem 2%;
-  }
-  .section4 .wrapper4 .section4__imgs-block {
-    -ms-grid-columns: (32rem)[1];
-        grid-template-columns: repeat(1, 32rem);
-    grid-gap: 1.8rem;
-    grid-auto-rows: minmax(300px, auto);
-  }
-  .section4 .wrapper4 .section4__imgs-block .img-box:nth-child(odd) {
-    grid-column: auto;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: calc($TABLET + 1px) 1) and (max-width: calc($NOTEBOOK)) {
   .section4 .wrapper4 {
     padding: 8rem 1rem;
   }
