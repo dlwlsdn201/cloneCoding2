@@ -438,7 +438,6 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         
         
         @media screen and (min-width:320px) and (max-width: 426px){
-            height: 85vh;
             .section3__left{
                 display: none;
             }
@@ -587,7 +586,7 @@ $UNDER_IPHONE5 : calc($IPHONE5);
             flex-flow: column nowrap;
             justify-content: center;
             align-items: center;
-            margin-bottom: 12%;
+            margin: 8% auto 5%;
 
             .section4__contents__title {
                 font-size: 2.3rem;
@@ -637,7 +636,12 @@ $UNDER_IPHONE5 : calc($IPHONE5);
         .section4__imgs-block {
             display: flex;
             flex-direction: column;
-
+            align-items: center;
+            grid-gap: 0;
+            // justify-content: center;
+            img {
+                margin-top: 1rem;
+            } 
         }
     
     }
