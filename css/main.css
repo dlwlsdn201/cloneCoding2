@@ -740,8 +740,8 @@
 .section4 .wrapper4 .section4__imgs-block .img-box img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: inherit;
 }
 
@@ -753,7 +753,6 @@
     width: 100%;
   }
   .section4 .wrapper4 .section4__imgs-block {
-    background: red;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
